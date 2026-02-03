@@ -1,0 +1,33 @@
+---
+import MainLayout from '../../layouts/main.astro';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "../../components/ui/card";
+import { Tool } from '../../components/Tool';
+---
+
+<MainLayout content={{ title: 'Tools | AI-augmented Secure Software Development' }}>
+  <section class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold mb-8">Tools</h1>
+    
+    <div class="space-y-12">
+      <p class="text-lg mb-8">
+        ipsum lorem dolor sit amet
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Tool 1 -->
+         <Tool
+          title="Tool Name"
+          description="Tool Description"
+          link="#"
+          tags={["Python", "Deep Learning", "Static Analysis"]}
+         />
+        <Tool
+          title="Tool Name"
+          description="Tool Description"
+          link="#"
+          tags={["Python", "Deep Learning", "Static Analysis"]}
+         />
+      </div>
+    </div>
+  </section>
+</MainLayout> 

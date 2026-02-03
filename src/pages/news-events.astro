@@ -1,0 +1,29 @@
+---
+import MainLayout from '../layouts/main.astro';
+import { News } from '../components/News.tsx';
+import { Events } from '../components/Event';
+---
+
+<MainLayout content={{ title: 'News and Events | AI-augmented Secure Software Development' }}>
+  <section class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold mb-8">News and Events</h1>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- News Section -->
+      <div class="space-y-8">
+        <h2 class="text-2xl font-semibold mb-6">Latest News</h2>
+        
+        <!-- News Item -->
+        <News date="Date" title="Title of news item" description="Description of the news item" link="Link to the news item" />
+      </div>
+      
+      <!-- Events Section -->
+      <div class="space-y-8">
+        <h2 class="text-2xl font-semibold mb-6">Upcoming Events</h2>
+        
+        <!-- Event Item -->
+        <Events date="Date" title="Title of event" description="Description of the event" location="Location of the event" link="Link to the event" />
+      </div>
+    </div>
+  </section>
+</MainLayout> 

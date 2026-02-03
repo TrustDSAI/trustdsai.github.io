@@ -1,0 +1,15 @@
+---
+import { NavMenu } from "./NavMenu.tsx";
+import { Image } from 'astro:assets';
+import logo from '../images/logos/logo_text.jpeg'
+---
+
+<header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 h-30 flex items-center px-6 sm:px-8 lg:px-10">
+    <a href="/" class="font-bold text-xl cursor-pointer mr-8">
+        <!--AI-SSD-->
+        <Image src={logo} alt="AI-SSD" className="h-30 w-30 object-cover rounded-full"/>
+    </a>
+    <div class="flex-1 flex justify-center">  
+        <NavMenu client:load />
+    </div>
+</header> 

@@ -1,0 +1,35 @@
+---
+import { Thesis } from '@/components/Thesis';
+import MainLayout from '../../layouts/main.astro';
+---
+
+<MainLayout content={{ title: 'Student Theses | AI-augmented Secure Software Development' }}>
+  <section class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold mb-8">Student Theses</h1>
+    
+    <div class="space-y-8">
+      <!-- Masters Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Msc</h2>
+        <div class="space-y-6">
+          <!-- Publication Item -->
+          <Thesis
+            title="Benchmarking LLM Robustness Against Prompt-Based Adversarial Attacks"
+            student='João Donato'
+            advisors={["João R.Campos","Leonardo Mariani"]}
+            abstract="Over the past few years, Large Language Models (LLMs) have revolutionized various fields by leveraging their extensive capabilities. Their ability to generate meaningful and contextually coherent text from minimal inputs, has led to significant advancements in areas such as Natural Language Processing (NLP) and Generative Artificial Intelligence (GenAI). These models have also shown potential in assisting or even automating complex tasks, including code generation. However, as LLMs become increasingly integrated into real-world applications and are made more accessible to the general public, concerns about the security and safety of the content they output have grown significantly. Recent research has shown that these models are vulnerable to adversarial techniques, which can manipulate them into generating harmful or biased outputs. These risks highlight the need for robust evaluation methods to assess the resilience of LLMs against these threats. While some efforts have been done to benchmark LLMs’ robustness against adversarial prompt-based attacks, these approaches are often highly context-specific and lack the comprehensive components required for a robust and systematic evaluation. In this dissertation, we have explored the concepts of LLMs, security, safety, and benchmarking with the goal of establishing a systematic benchmarking methodology for evaluating and comparing the robustness of LLMs built-in security measures when faced with adversarial prompt-based attacks. The proposed methodology is composed of the key components that make up a reliable benchmark, including scenarios, workloads, metrics and attack loads and is designed to ensure its representativeness, usefulness and adaptability to different contexts. To demonstrate the usefulness of the proposed methodology, we have also conducted a benchmarking campaign with a varied set of LLMs in the context of vulnerable and also malicious code generation. From this instantiation, we uncovered significant insights into the models’ safety alignments and vulnerabilities. Our findings reveal that while most safety-aligned models effectively refuse to generate malicious code, they readily produce vulnerable code when asked. Furthermore, our analysis of various attack vectors demonstrated that multi-turn conversational attacks and single-turn role-playing scenarios are significantly more effective at bypassing safety measures than template-based prompts. These results underscore the importance of a structured benchmarking methodology and reveal key weaknesses in current LLMs, providing a clear path for future research in developing more robust and secure models."
+            year="2025"
+            pdf=""
+          />
+          <Thesis
+            title="Benchmarking Large Language Models For Code Generation"
+            student='Rodrigo Pato Nogueira'
+            advisors={["João R. Campos", "Marco Vieira"]}
+            abstract="In recent years, there has been a rapid growth in the adoption of Generative Artificial Intelligence (GenAI) models, particularly Large Language Models (LLMs), for a wide range of tasks. One of the most significant tasks is the generation of code based on natural language descriptions. The popularity of LLMs in this task arises from their ability to produce contextually relevant code, their support for multiple programming languages, and their potential to significantly reduce development time and costs. These models are widely used in domains such as software development, education, data science, and automated testing. They also play a pivotal role in advancing technologies like low-code platforms and AI-assisted programming tools. However, despite their success across many tasks, LLMs still face challenges in generating functional code, particularly for complex problems or less common programming languages. These limitations highlight the need for a robust and comprehensive benchmarking framework to effectively evaluate LLMs in text-to-code generation. Such a benchmark would provide deeper insight into the strengths and weaknesses of different models, helping practitioners select the most suitable model for their specific tasks and enabling researchers to better understand where their models excel or fall short. While several benchmarks have been proposed, they often rely on incomplete datasets with a small number of problems or problems with similar difficulty levels, cover only a limited range of programming languages (frequently just one), and evaluate performance using a narrow set of metrics, typically focusing solely on functional correctness. This overlooks important aspects such as how close the generated code is to a valid implementation, and its quality. Moreover, existing benchmarks do not follow a structured methodology, lacking aspects such as a clear evaluation procedure, which undermines trust in their results and makes it difficult to extend them to assess other critical aspects of code generation, such as reliability and security. In this dissertation, we explore the concepts of LLMs, code generation and evaluation, and benchmarking, with the goal of designing a systematic benchmarking framework for assessing LLMs in text-to-code generation tasks. The proposed framework includes a diverse set of problems with varying complexity, incorporates multiple evaluation metrics, and supports a wide range of experimental setups, enabling a structured comparison of LLMs and providing insights into their strengths, limitations, and applicability to real-world programming challenges. We instantiated the framework and used it to evaluate several open-source models, demonstrating its practical utility. The results show that, despite their potential, LLMs still struggle with complex tasks and exhibit recurring issues such as missing import statements and incorrect variable scoping, which limit their reliability in more demanding scenarios."
+            year="2025"
+            pdf=""
+          />
+      </div>
+    </div>
+  </section>
+</MainLayout> 

@@ -1,0 +1,133 @@
+---
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import MainLayout from '../layouts/main.astro';
+---
+
+<MainLayout content={{ title: 'Goals & Tasks | AI-augmented Secure Software Development' }}>
+  <section class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold mb-8">Goals & Tasks</h1>
+    
+    <div class="space-y-12">
+      <!-- Mission Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
+        <p class="text-lg">
+          Our mission is to incorporate AISE into quality assurance processes, demonstrating that it can significantly enhance the ability to ensure software quality, with a focus on code dependability, and security.
+        </p>
+      </div>
+      
+      <!-- Goals Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Objectives</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Objective 1</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Use GenAI/LLMs to leverage syntatic and workflow knowledge for accurate bug and vulnerability identification.</p>
+            </CardContent>
+          </Card>
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Objective 2</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Use novel GenAI/LLM-based techniques to systematically generate code
+              patches according to best practices and principles of software development</p>
+            </CardContent>
+          </Card>
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Objective 3</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Produce tools for automated test case generation, generating
+              representative test cases on demand for fault/failure/attack/intrusion injection</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      
+      <!-- Current Tasks Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4"> Tasks</h2>
+        <div class="space-y-4">
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Systematic Literature Review</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Literature related to AI-augmented tools for code analysis, bug detection, automated patch generation, and testing
+              techniques</p>
+            </CardContent>
+          </Card>
+
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Baseline Benchmarking</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Identifying and selecting a set of representative software projects and existing tools for code analysis (from the
+              systematic literature review that is going be conducted in Task 1, partially overlaping), bug detection, patch
+              generation, and test cases generation</p>
+            </CardContent>
+          </Card>
+
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">GenAI Code Analysis and Bug Detection</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Development and implementation of LLM’s and deep learning techniques for code analysis and bug detection.</p>
+            </CardContent>
+          </Card>
+
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Patch Generation and Validation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Develop AI-based methods for generating and validating patches for identified bugs (...), developing automated
+              testing frameworks to validate these patches against a variety of test cases</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Dependability: fault/failure test case generation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>GenAI techniques to create realistic scenarios that test the resilience of software under various fault
+              conditions (...), identifying/using common fault types, developing algorithms to generate corresponding test
+              cases</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Security: attack/intrusion test case generation</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Generating test cases that simulate attacks and intrusions (...) integrate existing knowledge into GenAI
+              solutions to create realistic and diverse attack scenarios that test the security defenses of software
+              systems</p>
+            </CardContent>
+          </Card>
+          
+          <Card className="p-6 justify-center">
+            <CardHeader>
+              <CardTitle className="text-xl font-medium">Integration</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Integration of tools and techniques (...) combining the code analysis, bug detection, patch generation,
+              fault/failure test case generation, and attack/intrusion test case generation modules (...) into CI/CD
+              pipelines</p>
+            </CardContent>
+          </Card>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout> 

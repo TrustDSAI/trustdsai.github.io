@@ -1,0 +1,56 @@
+---
+import MainLayout from '../../layouts/main.astro';
+import { TeamMember } from '../../components/TeamMember.tsx';
+import joaodonato from '../../images/team/joaodonato.jpeg';
+import joaorcampos from '../../images/team/joaorcampos.jpeg';
+import charlesgoncalves from '../../images/team/charlesgoncalves.jpeg';
+import josepereira from '../../images/team/josepereira.jpeg';
+import nunolourenco from '../../images/team/nunolourenco.jpeg';
+import jiaweiwang from '../../images/team/jiaweiwang.jpeg';
+import placeholder from '../../images/team/placeholder.jpeg';
+import marcovieira from '../../images/team/marcovieira.jpeg';
+import nunolaranjeiro from '../../images/team/nunolaranjeiro.jpeg';
+import horaciofranca from '../../images/team/horaciofranca.jpeg';
+import joaoferreira from '../../images/team/joaoferreira.jpeg';
+import saeidjavani from '../../images/team/saeidjavani.jpeg';
+import oleksandryarotskyi from '../../images/team/oleksandryarotskyi.jpeg';
+import rodrigonogueira from '../../images/team/rodrigonogueira.jpeg';
+import joaoesteves from '../../images/team/joaoesteves.jpg';
+import franciscapereira from '../../images/team/franciscapereira.jpg';
+import tiagoalmeida from '../../images/team/tiagoalmeida.jpg';
+import gustavomarinho from '../../images/team/gustavomarinho.jpeg';
+---
+
+<MainLayout content={{ title: 'Our Team | AI-augmented Secure Software Development' }}>
+  <section class="container py-8 justify-items-center space-between">
+    <h1 class="text-3xl font-bold mb-8">Principal Investigator</h1>
+    <div class="flex justify-center">
+      <TeamMember name="João R. Campos" image={joaorcampos.src} linkedin="https://www.linkedin.com/in/jo%C3%A3o-r-campos-38876015a/" googleScholar="https://scholar.google.com/citations?user=_kcaqoEAAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/joao-campos" />
+    </div>
+    <h1 class="text-3xl font-bold mb-8 mt-16 "> PhD/Researchers</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+      <TeamMember name="Charles Gonçalves" image={charlesgoncalves.src} linkedin="https://www.linkedin.com/in/charles-goncalves-ba010917/" googleScholar="https://scholar.google.com/citations?hl=en&user=9sXqxd4AAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/charles-goncalves"/>
+      <TeamMember name="José D'Abruzzo Pereira" image={josepereira.src} linkedin="https://www.linkedin.com/in/jose-alexandre-dabruzzo-pereira/" googleScholar="https://scholar.google.com/citations?hl=en&user=ZPKlxFQAAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/jose-pereira"/>
+      <TeamMember name="Nuno Lourenço" image={nunolourenco.src} linkedin="https://www.linkedin.com/in/nuno-louren%C3%A7o-a05647317/" googleScholar="https://scholar.google.com/citations?hl=en&user=IC4uQLcAAAAJ" personalWebsite="https://www.cisuc.uc.pt/en/people/nuno-lourenco"/>
+      <TeamMember name="Marco Vieira" image={marcovieira.src} linkedin="https://www.linkedin.com/in/mvieira1975/" googleScholar="https://scholar.google.com/citations?user=l3cF0LoAAAAJ&hl=en&oi=ao" personalWebsite="https://www.cisuc.uc.pt/en/people/marco-vieira"/>
+      <TeamMember name="Nuno Laranjeiro" image={nunolaranjeiro.src} googleScholar="https://scholar.google.com/citations?user=7XYIVVMAAAAJ&hl=en&oi=ao" personalWebsite="https://www.cisuc.uc.pt/en/people/nuno-laranjeiro"/>
+      <TeamMember name="João Ferreira" image={joaoferreira.src} linkedin={"https://www.linkedin.com/in/joao-ferreira-b0045197/"} googleScholar={"https://scholar.google.com/citations?view_op=list_works&hl=pt-BR&hl=pt-BR&user=nI6ORysAAAAJ"} personalWebsite="https://www.cisuc.uc.pt/en/people/j-junior"/>
+    </div>
+    <h1 class="text-3xl font-bold mb-8 mt-16 ">PhD Students</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+      <TeamMember name="Jiawei Wang" image={jiaweiwang.src} linkedin="https://www.linkedin.com/in/wang-jiawei-a13621271/" personalWebsite="https://www.cisuc.uc.pt/en/people/jw-wang"/>
+      <TeamMember name="Horácio França" image={horaciofranca.src} linkedin="https://www.linkedin.com/in/hor%C3%A1cio-fran%C3%A7a-0b492444/" googleScholar="https://scholar.google.com/citations?user=o6vP5I0AAAAJ&hl=en&oi=ao" personalWebsite="https://www.cisuc.uc.pt/en/people/h-franca"/>
+      <TeamMember name="Saeid Javani" image={saeidjavani.src} linkedin={"http://www.linkedin.com/in/saeid-javani"} personalWebsite="https://www.cisuc.uc.pt/en/people/s-jananloo"/>
+      <TeamMember name="Rodrigo Nogueira" image={rodrigonogueira.src} linkedin={"https://pt.linkedin.com/in/rodrigo-nogueira-7b0b29223"} googleScholar={"https://scholar.google.com/citations?user=NF-xRpUAAAAJ&hl=en&oi=ao"} personalWebsite="https://www.cisuc.uc.pt/en/people/r-nogueira"/>
+    </div>
+    <h1 class="text-3xl font-bold mb-8 mt-16 ">M.Sc. Students</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+      <TeamMember name="João Donato" image={joaodonato.src} linkedin="https://www.linkedin.com/in/joaom-cdonato/"  />
+      <TeamMember name="Oleksandr Yarotskyi" image={oleksandryarotskyi.src} linkedin={"https://www.linkedin.com/in/oleksandr-yarotskyi/"} personalWebsite="https://www.cisuc.uc.pt/en/people/o-yarotskyi"/>
+      <TeamMember name="João Esteves" image={joaoesteves.src} linkedin={"https://www.linkedin.com/in/jo%C3%A3o-esteves-552b66303/"} />
+      <TeamMember name="Francisca Pereira" image={franciscapereira.src} linkedin={"https://www.linkedin.com/in/franciscacp/"} />
+      <TeamMember name="Tiago Almeida" image={tiagoalmeida.src} linkedin={"https://www.linkedin.com/in/tiagoalmeida03/"} />
+      <TeamMember name="Gustavo Marinho" image={gustavomarinho.src} linkedin={"https://www.linkedin.com/in/gustavo-marinho-is-cs/"} />
+    </div>
+  </section>
+</MainLayout> 

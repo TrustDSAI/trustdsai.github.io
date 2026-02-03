@@ -1,0 +1,22 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+const { content } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{content?.title || 'AI-augmented Secure Software Development'}</title>
+	</head>
+	<body class="min-h-screen bg-background flex flex-col">
+		<Navbar />
+		<main class="container mx-auto px-10 py-8 flex-grow">
+			<slot />
+		</main>
+		<Footer class="mt-auto" />
+	</body>
+</html>

@@ -1,0 +1,46 @@
+---
+import MainLayout from '../layouts/main.astro';
+import { Positions } from '@/components/Position';
+---
+
+<MainLayout content={{ title: 'Opportunities | AI-augmented Secure Software Development' }}>
+  <section class="container mx-auto py-8">
+    <h1 class="text-4xl font-bold mb-8">Opportunities</h1>
+    
+    <div class="space-y-12">
+      <p class="text-lg mb-8">
+        Join our team and contribute to cutting-edge research in AI-powered secure software development. 
+      </p>
+      
+      <div>
+        <h2 class="text-2xl font-semibold mb-6">Research Positions</h2>
+        <div class="space-y-6">
+          <!-- Position Item -->
+          <Positions
+            title="Title of position"
+            description="Description of the position"
+            requirements={["Requirement 1", "Requirement 2"]}
+            link="#"
+            tag="Tag? something like full-time, part-time, etc.???"
+          />
+          
+        </div>
+      </div>
+      
+      <!-- Student Opportunities Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-6">Studentship Opportunities</h2>
+        <div class="space-y-6">
+          <!-- Opportunity Item -->
+          <Positions
+            title="Title of position"
+            description="Description of the position"
+            requirements={["Requirement 1", "Requirement 2"]}
+            link="#"
+            tag="Tag? something like full-time, part-time, etc.???"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout> 
