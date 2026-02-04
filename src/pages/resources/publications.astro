@@ -10,10 +10,10 @@ import MainLayout from '../../layouts/main.astro';
     <div class="space-y-8">
       <!-- Year Section -->
       <div>
-        <h2 class="text-2xl font-semibold mb-4">2025</h2>
+        <h2 class="text-2xl font-semibold mb-4">2026</h2>
         <div class="space-y-6">
           <!-- Publication Item -->
-          <Publication
+          <!-- <Publication
           title="Benchmarking Large Language Models for Code Generation"
           authors={["Rodrigo Pato Nogueira"]}
           abstract="Large Language Models (LLMs) have become increasingly popular for text-to-code generation, a task which involves converting natural language descriptions into code. While they have shown promising results, challenges remain with more complex problems and less common programming languages, highlighting the need for robust and systematic benchmarks. Without such benchmarks, there is a risk of misrepresenting LLMs capabilities and relying on tools that may not perform as expected. Existing benchmarks have several limitations, such as incomplete metrics, small datasets, a focus on a single programming language, and a lack of clear methodology. These shortcomings make it difficult to compare models effectively and limit the benchmarks' ability to expand to cover important aspects such as dependability and security. This work introduces a systematic benchmarking framework to evaluate LLMs on text-to-code tasks. The framework considers the need for diverse problems, multiple evaluation metrics, and supports setups like few-shot learning, aiming to provide meaningful insights into LLMs performance and their applicability in real-world programming scenarios."
@@ -21,43 +21,7 @@ import MainLayout from '../../layouts/main.astro';
           link="https://ieeexplore.ieee.org/abstract/document/11144864"
           code=""
           pdf="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11144864"
-          />
-          <Publication
-            title="GPTs are not the silver bullet: Performance and challenges of using GPTs for security bug report identification"
-            authors={["Horácio L. França", "Katerina Goseva-Popstojanova", "César Teixeira", "Nuno Laranjeiro"]}
-            abstract="Context: Identifying security bugs in software is critical to minimize vulnerability windows. Traditionally, bug reports are submitted through issue trackers and manually analyzed, which is time-consuming. Challenges such as data scarcity and imbalance generally hinder the development of effective machine learning models that could be used to automate this task. Generative Pre-trained Transformer (GPT) models do not require training and are less affected by the imbalance problem. Therefore, they have gained popularity for various text-based classification tasks, apparently becoming a natural highly promising solution for this problem. Objective: This paper explores the potential of using GPT models to identify security bug reports from the perspective of a user of this type of models. We aim to assess their classification performance in this task compared to traditional machine learning (ML) methods, while also investigating how different factors, such as the prompt used and datasets’ characteristics, affect their results. Methods: We evaluate the performance of four state-of-the-art GPT models (i.e., GPT4All-Falcon, Wizard, Instruct, OpenOrca) on the task of security bug report identification. We use three different prompts for each GPT model and compare the results with traditional ML models. The empirical results are based on using bug report data from seven projects (i.e., Ambari, Camel, Derby, Wicket, Nova, OpenStack, and Ubuntu). Results: GPT models show noticeable difficulties in identifying security bug reports, with performance levels generally lower than traditional ML models. The effectiveness of the GPT models is quite variable, depending on the specific model and prompt used, as well as the particular dataset. Conclusion: Although GPT models are nowadays used in many types of tasks, including classification, their current performance in security bug report identification is surprisingly insufficient and inferior to traditional ML models. Further research is needed to address the challenges identified in this paper in order to effectively apply GPT models to this particular domain."
-            venue='Information and Software Technology'
-            link="https://www.sciencedirect.com/science/article/pii/S095058492500117X?casa_token=KWsW-lDzdvUAAAAA:VQhX_17eEQtIqvMt-yUBDpU6D8GGr-I3ujYoIXljAh30uaRskvuAqEOv6iKW7xLo2uVATJmXjGL_"
-            code="https://doi.org/10.5281/zenodo.13754563"
-            pdf="https://www.sciencedirect.com/science/article/pii/S095058492500117X/pdfft?md5=8c743603a72c6c5540112021f2ed94f8&pid=1-s2.0-S095058492500117X-main.pdf"
-          />
-          <Publication
-            title="Beyond Functional Correctness: An Empirical Evaluation of Large Language Models for Text-to-Code Generation"
-            authors={["Rodrigo Pato Nogueira", " Marco Vieira", "João R.Campos"]}
-            abstract="Large Language Models (LLMs) have become increasingly popular for text-to-code generation, a task that involves converting natural language descriptions into code. While they have shown promising results, they are still flawed, especially when dealing with complex problems, making it crucial to have a deep understanding of their strengths and limitations. However, current evaluations are often limited, targeting only a single programming language, considering a small set of related models, and focusing heavily on execution-based metrics such as unit test pass rates. Moreover, they tend to overlook deeper issues like code quality, recurring mistakes, and underlying patterns in the generated code. To address these gaps and properly assess how effective LLMs are at generating quality code, we conduct a comprehensive evaluation of several LLMs across Python and C++ using a large, diverse dataset that spans multiple difficulty levels. Our evaluation combines execution-based and static analysis metrics, enabling us to assess both functional correctness and the structural quality of the code. Unlike prior work, our study also includes an in-depth analysis of the generated code, uncovering common mistakes and failure modes, allowing for a more complete and differentiated view of model capabilities. Results show that, despite their potential, open-source LLMs still struggle with complex tasks and make recurring systematic errors such as missing import statements and incorrect variable scoping."
-            venue='ISSRE 2025'
-            link=""
-            code=""
-            pdf=""
-          />
-          <Publication
-            title="Towards a Minimum Security Baseline for Cyber-Physical Systems through Security Standards Harmonization"
-            authors={["Henrique Fonseca", "João R. Campos", "Regina Moraes"]}
-            abstract="Information systems have become fundamental in controlling physical devices through the internet. These systems, known as Cyber-Physical Systems (CPS), rely on data collection as a fundamental element for execution of device functions, and they are widespread in several environments, such as medical, smart cities, wearable devices, and spatial environments. Despite their critical importance, recent security incidents point to a notable lack of concern for information security in the development of CPS systems. A major contributing factor is the difficulty in understanding security requirements, whether those specified in the requirement elicitation documents or those arising from security standards for specific systems. Many of these standards lack clarity and contain ambiguities, leading to subjective interpretations and inconsistent implementation. This research proposes a method to condense and harmonize security requirements, generating a Minimum Security Baseline (MSB) for the development of CPS, especially when there is a need to meet several standards. To automate the creation of the MSB, it leverages Large Language Models (LLMs) to process the texts in natural language and identify intersections and complements contained in the various documents. As a case study, we will use the mission requirements of the CubeSat satellite CONASAT-0 model, developed by INPE (National Institute for Space Research). The MSB is generated by examining and semantically analyzing the requirements from the NIST, ECSS, and CCSDS standards, using the OWASP IoT Security Verification Standard (ISVS) as the ontological foundation for security terms. The results include an easy-to-understand MSB that can be a valuable artifact to guide the implementation of embedded systems without great difficulties, since engineers have a single document to follow, as well as a method applicable to CPSs in several application contexts (industrial, automotive, and others)."
-            venue='LADC 2025'
-            link=""
-            code=""
-            pdf=""
-          />
-          <Publication
-            title="An Empirical Study of Large Language Models as Experts in Software Trustworthiness Assessment"
-            authors={["Saeed Javani jananloo", "José D'Abruzzo Pereira", "Marco Vieira"]}
-            abstract="As software plays an increasingly central role in daily life, ensuring its trustworthiness is essential. Existing Software Trustworthiness Assessment (STA) techniques often lack theoretical grounding, disregard user expectations, and provide limited actionable guidance. At the same time, Large Language Models (LLMs) have shown strong capabilities in software engineering tasks, but their use for holistic and interpretable STA remains unexplored. This paper presents an exploration of using LLMs to perform context-aware STA, with a specific focus on system software functions written in C programming language. Our approach involved selecting functions from the Linux Kernel, designing tailored prompts, and executing LLM-based assessments. We report on three practical experiences, two involving expert-based assessments and one comparing results against SCOLP, a state-of-the-art automated technique. The results show that LLM-based categorizations achieve substantial agreement with most voted expert rankings, fair agreement with consensus ranking, and only slight agreement with the automated baseline. These experiences provide insight into the limitations of LLMs in supporting trustworthiness assessments in real-world systems."
-            venue='LADC 2025'
-            link=""
-            code=""
-            pdf=""
-          />
+          /> -->
       </div>
     </div>
   </section>
