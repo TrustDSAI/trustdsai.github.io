@@ -1,13 +1,49 @@
-# Astro with Tailwind
+# TrustDevSecAI Project Website
 
-```sh
-npm create astro@latest -- --template with-tailwindcss
+Website for the **TrustDevSecAI research project**, presenting the project's research activities, publications, tools, and related resources.
+
+## About TrustDevSecAI
+
+TrustDevSecAI aims to advance the security and trustworthiness of modern DevSecOps pipelines through **vulnerability characterization, adversarial evaluation, and AI-assisted security analysis**.
+
+The project combines **Orthogonal Defect Classification (ODC)**, **Large Language Models (LLMs)**, and **empirical security benchmarking** to study vulnerabilities and security limitations in automated CI/CD environments. Its research includes the evaluation of security mechanisms against realistic attack scenarios, including **Poisoned Pipeline Execution (PPE)**.
+
+The project ultimately aims to support informed and automated decision-making in DevSecOps by introducing measurable trustworthiness criteria covering **security, reliability, and maintainability** into the software development lifecycle.
+
+## Website
+
+The website provides an overview of:
+
+* Research activities and projects
+* Publications and research outputs
+* Tools and datasets developed during the research
+* Project members and contributors
+* Related resources
+
+## Maintainers
+
+Maintained by **João Ferreira** and **Diogo Neves**.
+
+## Credits
+
+Based on the [AI-Augmented Secure Software Development website project](https://ai-ssd.github.io/).
+
+## Development
+
+Install the dependencies:
+
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
+Run the development server:
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+```bash
+npm run dev
+```
 
-For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
+Build the website for production:
+
+```bash
+npm run build
+```
