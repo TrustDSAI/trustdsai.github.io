@@ -10,7 +10,7 @@ import MainLayout from '../../layouts/main.astro';
     <div class="space-y-8">
       <!-- Masters Section -->
       <div>
-        <h2 class="text-2xl font-semibold mb-4">Msc</h2>
+        <h2 class="text-2xl font-semibold mb-4">Master Students</h2>
         <div class="space-y-6">
           <!-- Publication Item -->
           <!-- <Thesis
@@ -21,6 +21,39 @@ import MainLayout from '../../layouts/main.astro';
             year="2025"
             pdf=""
           /> -->
+
+          <Thesis
+            title="Evaluating the Continuous Integration Server Ability to Deploy Vulnerable Applications in DevSecOps Software Development Lifecycle"
+            student='Hugo Barros'
+            advisors={["José D’Abruzzo Pereira", "João R.Campos"]}
+            abstract={`Modern society relies heavily on software systems for daily operations, making the security of these systems a fundamental requirement. However, the software development industry is driven by a need for rapid iteration and automated delivery, creating an automation paradox where the demand for speed often conflicts with security. To support this need, organizations rely on Continuous Integration (CI) pipelines to automate code integration and deployment. While DevSecOps aims to embed security practices directly into these automated workflows, default CI pipelines often act as passive executors that prioritize functional deployments, risking the propagation of vulnerable code directly into production if not explicitly secured.
+
+In a DevSecOps paradigm, CI servers must evolve beyond mere build tools to act as active security gates, ensuring that insecure or vulnerable software is intercepted before release. This thesis explores the security posture and gating capacity of modern CI servers. Using recognized vulnerable artifacts, OWASP Juice Shop and WebGoat, mapped to the OWASP Top 10 for Web Applications, we first evaluate the native build behaviors of GitHub Actions, Jenkins and GitLab CI/CD when processing intentionally vulnerable applications. The baseline findings empirically demonstrate the "Green Build Fallacy" across all three platforms: unconfigured, native CI workflows exhibit a 0% detection rate, executing the builds to completion without raising security alerts.
+
+To determine the effort and efficacy of securing these workflows, a secured DevSecOps configuration integrating Static Application Security Testing (SAST) tools (Semgrep and CodeQL) was implemented on GitHub Actions. To evaluate these pipelines against non-standard threats, Large Language Models (LLMs), including GPT-5.4-mini, were utilized to generate and inject code-level vulnerabilities designed to bypass traditional scanners into the testbed, allowing us to stress-test the detection capabilities against threats. This framework employed a closed-loop "Functional Gate" to ensure that context-adapted, polymorphic vulnerabilities remained syntactically valid and compilable before triggering automated pipeline scans.
+
+When evaluating these injected payloads, integrated DevSecOps scanners revealed critical blind spots against polymorphic vulnerabilities. While pattern-based Abstract Syntax Tree (AST) engines such as Semgrep detected superficial syntactic signatures, achieving a 27.3% Detection Rate for isolated path traversal flaws (CWE-22), semantic analyzers like CodeQL suffered a 100% False Negative Rate across all complex logic mutations. These findings demonstrate that although static scanners can identify overt syntactic noise, they remain fundamentally blind to contextually adapted logic flaws.
+
+Ultimately, this research provides a standardized benchmarking framework and actionable insights to transform CI pipelines from passive execution conduits into resilient, active security gates.
+`}
+            year="2026"
+            pdf=""
+          />
+          <Thesis
+            title="Securing Containerized CI/CD Pipelines: An Empirical Comparison of Container Vulnerability Scanners and Evidence-Based Policy Gating"
+            student='Simão Sousa'
+            advisors={["José D’Abruzzo Pereira", "Charles Gonçalves"]}
+            abstract={`Continuous Integration and Continuous Deployment (CI/CD) pipelines increasingly rely on vulnerability scanners to gate container images before deployment. Yet teams typically adopt a single scanner without evidence of how differently these tools behave on the same workloads. Where scanner output drives an automated gate, that output is itself part of the security control.
+
+This dissertation addresses that gap in two parts. First, it defines a controlled comparison method for container vulnerability scanners: images pinned by digest and grouped by maintenance state, scanned repeatedly against fixed vulnerability databases by more than one scanner, with agreement measured separately at Common Vulnerabilities and Exposures (CVE) level, at severity level, and on reported fix availability. The method is instantiated with three open-source scanners. Trivy and Grype are compared directly across nine images at 30 runs per image per tool, with a 21-image extension across six language ecosystems bringing the total to 30. OSV-Scanner reports one entry per security advisory rather than per CVE, and a single advisory may cover several CVEs, so it is included as a coverage reference but excluded from the CVE-level agreement measures.
+
+Trivy and Grype disagree widely and asymmetrically: CVE-level Jaccard agreement ranges from 0.14 to 0.95, severity agreement is variable, and fix-availability estimates can differ by more than a factor of two on the same image. An apparent ecosystem-based pattern in agreement does not survive testing against the additional images. The one signal that reliably converges is the CRITICAL count (∆ ≤ 3 on 25 of 30 images), with PHP images the recurring exception.
+
+Second, these findings shape p_gate, a policy-as-code gating layer (Open Policy Agent (OPA), written in the declarative query language Rego) that corroborates findings across Trivy/Grype consensus, fix availability, and external enrichment, issuing a three-tier verdict (block, review, or pass) instead of a binary one. It reduces automatically broken builds from 26 of 30 images to 10, routing the rest to human review. Absent a ground truth, this demonstrates what the approach expresses rather than a measured improvement.
+`}
+            year="2026"
+            pdf=""
+          />
       </div>
     </div>
   </section>

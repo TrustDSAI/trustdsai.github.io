@@ -1,12 +1,12 @@
 ---
-import { Publication } from '@/components/Publication';
-import MainLayout from '../../layouts/main.astro';
+import { Publication } from "@/components/Publication";
+import MainLayout from "../../layouts/main.astro";
 ---
 
-<MainLayout content={{ title: 'Scientific Publications | TrustDevSecAI' }}>
+<MainLayout content={{ title: "Scientific Publications | TrustDevSecAI" }}>
   <section class="container mx-auto py-8">
     <h1 class="text-4xl font-bold mb-8">Scientific Publications</h1>
-    
+
     <div class="space-y-8">
       <!-- Year Section -->
       <div>
@@ -22,25 +22,30 @@ import MainLayout from '../../layouts/main.astro';
           code=""
           pdf="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11144864"
           /> -->
-          <Publication 
-          title="Using Source Code Data Structures to Detect Vulnerable Code Units with Deep Graph Convolutional Neural Networks"
-          authors={["José D’Abruzzo Pereira", "Luís Vieira", "Nuno Lourenço"]}
-          abstract=""
-          venue='2026 IEEE 37th International Symposium on Software Reliability Engineering (ISSRE), Limassol, Cyprus'
-          link=""
-          code=""
-          pdf=""
+          <Publication
+            title="Using Source Code Data Structures to Detect Vulnerable Code Units with Deep Graph Convolutional Neural Networks"
+            authors={["José D’Abruzzo Pereira", "Luís Vieira", "Nuno Lourenço"]}
+            abstract="Software vulnerabilities pose risks to system security. Traditional detection methods have important limitations: static analysis relies on expert-crafted rules and often yields high false-positive rates, while dynamic analysis suffers from incomplete coverage and high computational cost. Machine Learning (ML) and Deep Learning (DL) provide alternatives by learning vulnerability patterns from data, with graph-based approaches being particularly promising due to their ability to capture structural and semantic properties of code. This work evaluates Deep Graph Convolutional Neural Networks (DGCNNs) on multiple graph representations of C functions for vulnerability detection. We extend a graph extraction pipeline for Control Flow Graphs (CFGs), Abstract Syntax Trees (ASTs), and Program Dependence Graphs (PDGs) using a Linux kernel vulnerability dataset, and implement a modular neural framework with a DGCNN-based classifier and an Autoencoder (AE) for pretraining. Results show that CFGs achieve the most stable performance, especially when combined with a lightweight 1D CNN and pretraining, while ASTs and PDGs yield less stable embeddings. While absolute F1-scores reflect the inherent difficulty of detecting sparse security signals in large-scale repositories, the results confirm the feasibility of applying DGCNNs to highly imbalanced real-world datasets. We demonstrate that our framework achieves stable performance and measurable gains over previous baselines, particularly when leveraging AE pretraining to structure the latent space of CFGs. These findings highlight that in production-scale code analysis, representation quality and embedding stability are more critical than increasing classifier complexity."
+            venue="2026 IEEE 37th International Symposium on Software Reliability Engineering (ISSRE), Limassol, Cyprus"
+            link=""
+            code=""
+            pdf="/papers/ISSRE2026_DGCNN-CR.pdf"
           />
-          <Publication 
-          title="Unreliable in Practice? A Comprehensive Study of Errors in LLM-Generated Code"
-          authors={["Rodrigo Pato Nogueira", "Marco Vieira", "João R. Campos",]}
-          abstract=""
-          venue='2026 IEEE 37th International Symposium on Software Reliability Engineering (ISSRE), Limassol, Cyprus'
-          link=""
-          code=""
-          pdf=""
+          <Publication
+            title="Unreliable in Practice? A Comprehensive Study of Errors in LLM-Generated Code"
+            authors={[
+              "Rodrigo Pato Nogueira",
+              "Marco Vieira",
+              "João R. Campos",
+            ]}
+            abstract="Large Language Models (LLMs) are being widely used for coding, with reports indicating that AI now generates an increasing share of production code. Studies show that LLMs can significantly improve developer productivity, yet they still struggle with more complex coding tasks. Just as understanding error modes in human-written code has been central to improving software quality, identifying and characterizing the errors in LLM-generated code is critical for setting realistic expectations and designing mitigation strategies. Prior research has been limited in scope, often focusing on a single language, a small number of problems, or a limited selection of models. As a result, there is still no comprehensive understanding of which errors are common and which are specific to certain models or languages. To address these gaps and develop a deeper understanding of the quality of LLM-generated code, we analyzed a corpus of 86,726 code samples that contained compilation or runtime errors. These samples were generated by seven LLMs across four compiled languages. We classified errors by their underlying causes using an LLM, manually validated these classifications, and performed a comparative analysis. This labeled data is then used to measure error prevalence by model, language, and problem difficulty, to identify common error patterns. Results show that, although error types vary strongly across languages and models, even the largest models frequently make simple mistakes. We also observe that generated code often omits basic input validation or memory-safety checks, which can lead to overflows, resource exhaustion, or other reliability/security issues."
+            venue="2026 IEEE 37th International Symposium on Software Reliability Engineering (ISSRE), Limassol, Cyprus"
+            link=""
+            code=""
+            pdf="/papers/ISSRE_Rodrigo.pdf"
           />
+        </div>
       </div>
     </div>
   </section>
-</MainLayout> 
+</MainLayout>
